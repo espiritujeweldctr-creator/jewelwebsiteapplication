@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html jewel">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jewel D. Espiritu | Portfolio</title>
+<style>
+/* GENERAL DESIGN */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+body {
+font-family: Arial, sans-serif;
+background-color: #fff0f6;
+color: #392033;
+line-height: 1.7;
+}
+/* NAVIGATION BAR */
+header {
+background-color: #390d28;
+padding: 15px 7%;
+position: sticky;
+top: 0;
+z-index: 100;
+}
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.logo {
+color: white;
+font-size: 28px;
+} nav ul {
+display: flex;
+list-style: none;
+gap: 20px;
+}
+nav ul li a {
+color: white;
+text-decoration: none;
+font-size: 14px;
+}
+nav ul li a:hover {
+color: #ff9ecb;
+}
+/* HOME SECTION */
+.home {
+min-height: 90vh;
+padding: 70px 10%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 35px;
+}
+.home-content {
+max-width: 650px;
+}
+.home-content h4 {
+color: #d94b91;
+letter-spacing: 2px;
+}
+.home-content h1 {
+font-size: 40px;
+color: #390d28;
+margin: 15px 0;
+}
+.home-content h1 span {
+color: #d94b91;
+} .home-content h3 {
+color: #8b3865;
+margin-bottom: 15px;
+}
+.home-content p {
+margin-bottom: 25px;
+}
+/* BUTTON */
+.btn {
+display: inline-block;
+background-color: #d94b91;
+color: white;
+padding: 10px 22px;
+border-radius: 25px;
+text-decoration: none;
+}
+.btn:hover {
+background-color: #390d28;
+}
+/* PROFILE */
+.profile {
+text-align: center;
+background-color: #ffd9e9;
+padding: 30px;
+border-radius: 20px;
+min-width: 220px;
+}
+.profile-circle {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background: linear-gradient(135deg, #d94b91, #390d28);
+color: white;
+border: 5px solid white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+font-weight: bold;
+margin: auto auto 15px; }
+/* SECTIONS */
+.section {
+padding: 70px 10%;
+}
+.section h2 {
+color: #390d28;
+font-size: 30px;
+margin-bottom: 25px;
+text-align: center;
+}
+/* CONTENT CARDS */
+.card {
+background-color: white;
+padding: 25px;
+border-radius: 15px;
+margin-bottom: 20px;
+border: 1px solid #f5bfd7;
+box-shadow: 0 5px 15px rgba(57, 13, 40, 0.07);
+}
+.card h3 {
+color: #d94b91;
+margin-bottom: 10px;
+}
+.card h4 {
+color: #713253;
+}
+/* SKILLS */
+.skills-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+}
+.skills-container .card {
+margin-bottom: 0;
+}
+/* GAME FEATURES */ .features {
+padding-left: 25px;
+margin-bottom: 20px;
+}
+/* SAMPLE OUTPUT */
+pre {
+background-color: #2c1725;
+color: #ffe5f0;
+padding: 20px;
+border-radius: 10px;
+overflow-x: auto;
+margin-top: 15px;
+font-size: 13px;
+}
+/* CONTACT */
+.card a {
+color: #d94b91;
+text-decoration: none;
+}
+.card a:hover {
+text-decoration: underline;
+}
+/* FOOTER */
+footer {
+background-color: #390d28;
+color: white;
+text-align: center;
+padding: 25px;
+font-size: 14px;
+}
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+nav {
+flex-direction: column;
+gap: 15px;
+}
+nav ul {
+justify-content: center; flex-wrap: wrap;
+gap: 12px;
+}
+.home {
+flex-direction: column-reverse;
+text-align: center;
+}
+.home-content h1 {
+font-size: 30px;
+}
+.skills-container {
+grid-template-columns: 1fr;
+}
+.section {
+padding: 50px 6%;
+}
+}
+</style>
+</head>
+<body>
+<!-- NAVIGATION BAR -->
+<header>
+<nav>
+<h2 class="logo">JE.</h2>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#project">Java Project</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<!-- HOME SECTION -->
+<section id="home" class="home"> <div class="home-content">
+<h4>WELCOME TO MY PORTFOLIO</h4>
+<h1>Hello, I'm <span>Jewel D. Espiritu</span></h1>
+<h3>First-Year Information Technology Student</h3>
+<p>
+Peace and all good! I am a first-year IT student
+who is interested in learning about technology,
+computers, programming, and web development.
+I believe that learning takes time and effort,
+and I always try my best to improve myself.
+</p>
+<a href="#about" class="btn">Know More About Me</a>
+</div>
+<div class="profile">
+<div class="profile-circle">JE</div>
+<h3>Jewel D. Espiritu</h3>
+<p>BSIT 1A</p>
+</div>
+</section>
+<!-- ABOUT ME -->
+<section id="about" class="section">
+<h2>About Me</h2>
+<div class="card">
+<p>
+My name is Jewel D. Espiritu. I am a first-year
+Bachelor of Science in Information Technology student.
+I enjoy learning new things about technology,
+especially computers, programming, and creating websites.
+</p> <p>
+I know that learning is not always easy, but I believe
+that every challenge is an opportunity to improve.
+One of my strengths is that I do not easily give up.
+I want to become more confident, responsible, and
+hardworking as I continue my journey in college.
+</p>
+<h3>My Hobbies</h3>
+<p>
+Solving Rubik's Cube, playing guitar, and riding a bike.
+</p>
+</div>
+</section>
+<!-- EDUCATIONAL BACKGROUND -->
+<section id="education" class="section">
+<h2>Educational Background</h2>
+<div class="card">
+<h3>College</h3>
+<h4>Our Lady of the Sacred Heart College of Guimba, Inc.</h4>
+<p>Bachelor of Science in Information Technology</p>
+<p>First Year - BSIT 1A</p>
+</div>
+<div class="card">
+<h3>Senior High School</h3>
+<h4>Manacsac High School</h4>
+<p>
+I completed my secondary education at Manacsac
+High School. My experiences helped me gain knowledge, learn new things, and become more
+prepared for college.
+</p>
+</div>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+<h2>My Skills</h2>
+<div class="skills-container">
+<div class="card">
+<h3>HTML</h3>
+<p>Learning how to create and organize webpage content.</p>
+</div>
+<div class="card">
+<h3>CSS</h3>
+<p>Learning how to design webpages using colors and layouts.</p>
+</div>
+<div class="card">
+<h3>Java</h3>
+<p>Learning basic Java programming, conditions, loops, and user 
+input.</p>
+</div>
+<div class="card">
+<h3>Computer Skills</h3>
+<p>Using computers for learning and school activities.</p>
+</div>
+<div class="card">
+<h3>Problem Solving</h3>
+<p>Understanding problems and finding possible solutions.</p>
+</div>
+<div class="card">
+<h3>Communication</h3>
+<p>Listening, sharing ideas, and working with other people.</p>
+</div> </div>
+</section>
+<!-- JAVA PROJECT -->
+<section id="project" class="section">
+<h2>My Java Project</h2>
+<div class="card">
+<h3>Word Guessing Game</h3>
+<p><strong>Programming Language:</strong> Java</p>
+<p>
+The Word Guessing Game is a simple console-based
+game developed using Java. The player needs to
+guess the hidden word by reading the given hint.
+Each word has five attempts, and the player
+earns points for every correct answer.
+</p>
+<h3>Game Features</h3>
+<ul class="features">
+<li>Five hidden words to guess.</li>
+<li>Hints for every hidden word.</li>
+<li>Five attempts for each word.</li>
+<li>Points and scoring system.</li>
+<li>Option to play again.</li>
+</ul>
+<h3>Code</h3>
+<pre>
+import java.util.Scanner;
+public class Main {
+public static void main(String[] args) {
+Scanner input = new Scanner(System.in); String[] words = {"apple", "banana", "computer", "school", "guitar"};
+String[] hints = {
+"A red or green fruit",
+"A yellow fruit",
+"An electronic device",
+"A place where students learn",
+"A musical instrument"
+};
+int score = 0;
+int attempts;
+String guess;
+String playAgain = "yes";
+System.out.println("================================");
+System.out.println(" WORD GUESSING GAME");
+System.out.println("================================");
+System.out.println("Instructions:");
+System.out.println("1. Guess the hidden word.");
+System.out.println("2. Read the hint carefully.");
+System.out.println("3. You have 5 attempts.");
+System.out.println("4. Get points for every correct answer.");
+while (playAgain.equalsIgnoreCase("yes")) {
+for (int i = 0; i < words.length; i++) {
+String word = words[i];
+String hint = hints[i];
+attempts = 5;
+System.out.println("\nHint: " + hint);
+System.out.println("The word has " + word.length() + " 
+letters.");
+while (attempts > 0) {
+System.out.print("Enter your guess: ");
+guess = input.nextLine();
+if (guess.equalsIgnoreCase(word)) {
+System.out.println("Correct! You got it!"); score += attempts;
+break;
+} else {
+attempts--;
+System.out.println("Wrong answer! Try again.");
+if (attempts > 0) {
+System.out.println("Attempts left: " + attempts);
+} else {
+System.out.println("Game Over!");
+System.out.println("The correct word is: " + word);
+}
+}
+}
+}
+System.out.println("\nYour current score: " + score);
+System.out.print("Do you want to play again? (yes/no): ");
+playAgain = input.nextLine();
+if (playAgain.equalsIgnoreCase("yes")) {
+score = 0;
+}
+}
+System.out.println("\n================================");
+System.out.println(" GAME OVER");
+System.out.println("================================");
+System.out.println("Your Final Score: " + score);
+System.out.println("Thank you for playing!");
+input.close();
+}
+}
+</pre>
+<h3>Sample Output</h3>
+<p>
+================================
+WORD GUESSING GAME
+================================ Instructions:
+1. Guess the hidden word.
+2. Read the hint carefully.
+3. You have 5 attempts.
+4. Get points for every correct answer.
+Hint: A red or green fruit
+The word has 5 letters.
+Enter your guess: apple
+Correct! You got it!
+Hint: A yellow fruit
+The word has 6 letters.
+Enter your guess: banana
+Correct! You got it!
+Your current score: 10
+Do you want to play again? (yes/no):
+</p>
+</div>
+<div class="card">
+<h3>What I Learned</h3>
+<p>
+Through this project, I learned how to use Java
+to create a simple game. I practiced using arrays,
+loops, if-else statements, Scanner, strings, and
+variables. This project helped me understand
+programming better and improve my coding skills.
+</p>
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact Information</h2> <div class="card">
+<p><strong>Name:</strong> Jewel D. Espiritu</p>
+<p>
+<strong>Email:</strong>
+<a href="mailto:espiritujeweldctr@gmail.com">
+espiritujeweldctr@gmail.com
+</a>
+</p>
+<p>
+<strong>Contact Number:</strong>
+<a href="tel:09928751531">09928751531</a>
+</p>
+<p><strong>Course:</strong> BSIT 1A</p>
+<p>
+<strong>School:</strong>
+Our Lady of the Sacred Heart College of Guimba, Inc.
+</p>
+</div>
+</section>
+<!-- FOOTER -->
+<footer>
+Jewel D. Espiritu </p>
+</footer>
+</body>
+</html>
